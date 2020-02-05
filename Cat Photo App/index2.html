@@ -1,0 +1,162 @@
+<!-- Basics of CSS - Cascading Style Sheets - the second section on freeCodeCamp  -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- Original sylesheet code that was used -->
+        <!-- <link rel="stylesheet" href="css/main.css"> -->
+
+        <!-- 2. Importing a Google Font - link must be in head/top of your code editor. 
+        Google Fonts https://fonts.google.com is a free library of web fonts that you can use 
+        in your CSS by referencing the font's URL. Now you can use the Lobster font in your CSS 
+        by using Lobster as the FAMILY_NAME as in the following example: 
+        font-family: FAMILY_NAME, GENERIC_NAME;. -->
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+        <title>Basics of CSS - freeCodeCamp</title>
+
+    </head>
+
+    <!-- Use CSS selectors to style elements - At the top of your code, create a <style> block.
+        Inside that <style> block, you can create a CSS selector for all <h2> elements. It's important
+        to have curly braces { } around the element's style rules. You also need to make sure that your
+        elements style definition is between the opening and closing style tags. Finally, be sure to add
+        a semicolon to the end of your element's style rules. -->
+    <style>
+
+        /* Styling Tags */
+        /* h2 {
+            color: blue;
+        } */
+
+        /* 1. Use a CSS Class to style an element - note that class names start with a period - In HTML
+        elements' class atributes the class name does NOT include the period. */
+        /* Styling Class */
+        .red-text {
+            color: red;
+        }
+
+        /* Changing the font size - font-size: then size in px, %, em, etc */
+        /* p {
+            font-size: 16px;
+        } */
+
+        /* Changing the font family - font-family: then the font name or style, like serif,
+        sans serif, monospace, etc */
+        p {
+            font-size: 16px;
+            font-family: monospace;
+        }
+
+        /* 2. Import a Google font -  Google Fonts https://fonts.google.com is a free library of web
+        fonts that you can use in your CSS by referencing the font's URL. Now you can use the 
+        Lobster font in your CSS by using Lobster as the FAMILY_NAME as in the following example: 
+        font-family: FAMILY_NAME, GENERIC_NAME;. */
+        /* h2 {
+            font-family: Lobster;
+        } */
+
+        /* Specify how fonts should downgrade - When a font family isn't available, you can tell the
+        browser to "degrade" to another font. Generic font family names are not case-sensitive. Also
+        they do not need quotes because they are CSS keywords. These generic font families include
+        monospace, serif, and sans serif. And it goes from left to right, the leftmost being the first
+        choice, all the way down to a generic font family in the rightmost entry. */
+        h2 {
+            font-family: Lobster, monospace;
+        }
+
+        /* Size your images - The width property controls an elements width.  */
+        .larger-image {
+            width: 500px;
+        }
+
+        .smaller-image {
+            width: 100px;
+        }
+
+        /* Add borders around your element - CSS borders have properties like style, color, and
+        width */
+        .thin-red-border {
+            border-color: red;
+            border-width: 5px;
+            border-style: solid;
+        }
+
+        .thick-green-border {
+            border-color: green;
+            border-width: 10px;
+            border-style: solid;
+        }
+
+        
+    </style>
+    
+
+    <body>
+        <!-- Change the color of text in HTML - can change a specific tag to reflect a color 
+        with the keyword  style="color: red;" -->
+        <!-- <h2 style="color: red;">CatPhotoApp</h2> -->
+
+        <!-- <h2>CatPhotoApp</h2> -->
+
+        <!-- 1. Use a CSS Class to style an element - note that class names start with a period - In HTML
+        elements' class atributes the class name does NOT include the period. -->
+        <!-- Do not include the period in HTML - only needed for CSS -->
+        <h2 class="red-text">Cat Photo App</h2>
+
+        <main>
+            <p> View more <a href="http://freecatphotoapp.com" target="_blank">cat photos</a></p>
+            <!-- <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back"></a> -->
+            
+            <!-- Apply smaller-image class to image to make image the indicated width -->
+            <!-- <a href="#"><img class="smaller-image" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back"></a> -->
+
+            <!-- Add Borders around your element - you can apply multiple classes to an element using its
+            class atribute, by separting each class name with a space. <img class="class1 class2"> -->
+            <a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back"></a>
+            <div>
+                <p>Things cats love:</p>
+                <ul>
+                    <li>milk</li>
+                    <li>cheese</li>
+                    <li>coding</li>
+                </ul>
+
+                <p>Top 3 things cats hate:</p>
+                <ol>
+                    <li>bears</li>
+                    <li>being trapped in a garbage can</li>
+                    <li>black olives</li>
+                </ol>
+            </div> 
+
+            <!-- This does not actually save yet 2/5/20 -->
+            <form action="submit/cat-photo.php" target="_self">
+                <label for="indoor"><input id="indoor" value="indoor" type="radio" name="indoor-outdoor" checked> Indoor</label>
+                <label for="outdoor"><input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor" > Outdoor</label>
+                <label for="underground"><input id="underground" value="underground" type="radio" name="indoor-outdoor"> Underground</label>
+                
+                <br><br>
+
+                <label for="loving"><input id="loving" value="loving" type="checkbox" name="personality" checked> Loving</label>
+                <label for="mean"><input id="mean" type="checkbox" name="personality" value="mean"> Mean</label>
+                <label for="sleepy"><input id="sleepy" type="checkbox" value="sleepy" name="personality"> Sleepy</label>
+
+                <br><br>
+                
+                <input type="text" placeholder="cat photo URL" required><button type="submit">Submit</button>
+            </form>
+            
+            <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+            <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
+            <p>Meowwww loved it, hated it, loved it, hated it yet spill litter box, scratch at owner, destroy all furniture, especially couch or lay on arms while you're using the keyboard. Missing until dinner time toy mouse squeak roll over. With tail in the air lounge in doorway. Man running from cops stops to pet cats, goes to jail.</p>
+            <p>Intently stare at the same spot poop in the plant pot but kitten is playing with dead mouse. Get video posted to internet for chasing red dot leave fur on owners clothes meow to be let out and mesmerizing birds leave fur on owners clothes or favor packaging over toy so purr for no reason. Meow to be let out play time intently sniff hand run outside as soon as door open yet destroy couch.</p>
+
+        </main>
+
+        <footer id ="footer">Copyright Cat Photo App</footer>
+
+    </body>
+</html>

@@ -1,0 +1,131 @@
+<!-- Basics of HTML - the first section of freeCodeCamp -->
+<!-- Declare the Doctype of an HTML Document - this tells the browser which version of HTML your page is using.
+    The rest of your HTML code needs to be wrapped in HTML tags. The opening <html> goes directly below the 
+    <!DOCTYPE html> line and the closing </html> goes at the end of the page. -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Define the Head and Body of an HTML Document  - a layer of organization - any markup with information about your page goes into the
+    <head> tag. Metadata elements such as <link>, <meta>, <title>, and <style> typically go inside of the <head>
+    element. Then any markup with content of the page (what is displayed to the user) would go inside of the
+    <body> tag. -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/main.css">
+        <title>Basics of HTML - freeCodeCamp</title>
+    </head>
+    <body>
+
+        <!-- <h1>Hello World!</h1> -->
+        <h2>CatPhotoApp</h2>
+
+        <main>
+            <!-- Nest an Anchor element within a paragraph -->
+            <p> View more
+            <a href="http://freecatphotoapp.com" target="_blank">cat photos</a>
+            <!-- target="_blank" opens the link in a new page -->
+            </p>
+
+
+            <!-- href="#" creates a dead link, useful when you don't know where it will link to yet. Also when you are working with JavaScript, you can control where it links to. -->
+            <!-- <a href="#" target="_blank">cat photos</a>
+            </p> -->
+
+
+            <!-- This creates a link to jump to another section of the page -->
+            <!-- <a href="#footer">Jump to Bottom</a> -->
+
+
+            <!-- Add an image with alt text -->
+            <!-- <img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back"> -->
+            
+
+            <!-- Turn an image into a link -->
+            <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back"></a>
+
+            <!-- Nest many elements within a single div element -->
+            <div>
+                <!-- Create a Bulleted unordered list ul -->
+                <p>Things cats love:</p>
+                <ul>
+                    <li>milk</li>
+                    <li>cheese</li>
+                    <li>coding</li>
+                </ul>
+
+                <!-- Create an Numbered Ordered list ol -->
+                <p>Top 3 things cats hate:</p>
+                <ol>
+                    <li>bears</li>
+                    <li>being trapped in a garbage can</li>
+                    <li>black olives</li>
+                </ol>
+            </div> 
+
+
+
+            <!-- Create a Form Element to submit data to a Server -->
+            <!-- <form action="/Users/jesscafarelli/Sites/freeCodeCamp projects/Cat Photo App/submit-cat-photo.rtf">
+                <input type="text" placeholder="cat photo URL"> -->
+            <form action="/Users/jesscafarelli/Sites/freeCodeCamp projects/Cat Photo App/submit-cat-photo.rtf">
+
+            <!-- Create radio buttons - can be created either way - note: wherever line input is on is where
+            the actual radio button will land: if label is before input, and input is NOT NESTED INSIDE LABEL
+            the button will come after the label - which is typically wrong. Standard seems to dictate that label 
+            should wrap input. Also, you can click on the label to select the radio button vs just pressing 
+            the radio button. -->
+            <label for="indoor">
+                <input id="indoor" value="indoor" type="radio" name="indoor-outdoor"> Indoor
+            </label>
+
+            <input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor">
+            <label for="outdoor"> Outdoor</label>
+            <!-- To Set Checkboxes and Radio Buttons by Default - use keyword checked inside input element -->
+            <label for="underground"><input id="underground" value="underground" type="radio" name="indoor-outdoor" checked> Underground</label>
+            
+            <br><br>
+
+            <!-- Create Checkboxes  -->
+            <label for="loving"><input id="loving" value="loving" type="checkbox" name="personality"> Loving</label>
+            <label for="mean"><input id="mean" type="checkbox" name="personality" value="mean"> Mean</label>
+            <!-- To Set Checkboxes and Radio Buttons by Default - use keyword checked inside input element -->
+            <label for="sleepy"><input id="sleepy" type="checkbox" value="sleepy" name="personality" checked> Sleepy</label>
+
+
+            <br><br>
+
+
+            <!-- Create a text field -->
+            <!-- <input type="text"> -->
+
+            <!-- Create Placeholder Text in a text field -->
+            <!-- <input type="text" placeholder="cat photo URL"> -->
+
+            <!-- Use HTML5 to Require a Field - stops user from pressing submit with an empty field on a form - 
+                it does not matter where you write required -->
+            <input type="text" placeholder="cat photo URL" required>
+
+            <!-- Create a button -->
+            <button type="submit">Submit</button>
+
+
+            
+            </form>
+
+
+            <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+
+            <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
+
+            <p>Meowwww loved it, hated it, loved it, hated it yet spill litter box, scratch at owner, destroy all furniture, especially couch or lay on arms while you're using the keyboard. Missing until dinner time toy mouse squeak roll over. With tail in the air lounge in doorway. Man running from cops stops to pet cats, goes to jail.</p>
+
+            <p>Intently stare at the same spot poop in the plant pot but kitten is playing with dead mouse. Get video posted to internet for chasing red dot leave fur on owners clothes meow to be let out and mesmerizing birds leave fur on owners clothes or favor packaging over toy so purr for no reason. Meow to be let out play time intently sniff hand run outside as soon as door open yet destroy couch.</p>
+
+        </main>
+
+        <footer id ="footer">Copyright Cat Photo App</footer>
+
+    </body>
+</html>
