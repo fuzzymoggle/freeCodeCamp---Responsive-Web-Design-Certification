@@ -84,13 +84,32 @@
             border-style: solid;
         }
 
+        /* Add a rounded corner with border-radius - using 10 px */
+        /* .thick-green-border {
+            border-color: green;
+            border-width: 10px;
+            border-style: solid;
+            border-radius: 10px;
+        } */
+
+        /* Make circular images with a border-radius - using 50%*/
         .thick-green-border {
             border-color: green;
             border-width: 10px;
             border-style: solid;
+            border-radius: 50%;
         }
 
-        
+        /* Give a background color to a div element - set an element's background color with the
+        background-color property. Can also be applied as a highlight color for text */
+        .green-background {
+            background-color: green;
+        }
+
+        .silver-background {
+            background-color: silver;
+        }
+
     </style>
     
 
@@ -116,7 +135,10 @@
             <!-- Add Borders around your element - you can apply multiple classes to an element using its
             class atribute, by separting each class name with a space. <img class="class1 class2"> -->
             <a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back"></a>
-            <div>
+            
+            <!-- <div> -->
+            <!-- Add a silver background to this div section -->
+            <div class="silver-background">
                 <p>Things cats love:</p>
                 <ul>
                     <li>milk</li>
@@ -133,7 +155,14 @@
             </div> 
 
             <!-- This does not actually save yet 2/5/20 -->
-            <form action="submit/cat-photo.php" target="_self">
+            <!-- <form action="submit/cat-photo.php" target="_self"> -->
+                <!-- Set the id of an element - In addition to classes, each HTML element can also
+                have an id attribute. There are several benefits to using id attributes: You can use
+                an id to style a single element and later you'll learn that you can use them to select
+                and modify specific elements with JavaScript. id attributes should be unique. Browsers
+                won't enforce this, nut it is a widely agreed upon best practice, so please don't 
+                give more than one element the same id attribute. -->
+            <form id="cat-photo-form" action="submit/cat-photo.php" target="_self">
                 <label for="indoor"><input id="indoor" value="indoor" type="radio" name="indoor-outdoor" checked> Indoor</label>
                 <label for="outdoor"><input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor" > Outdoor</label>
                 <label for="underground"><input id="underground" value="underground" type="radio" name="indoor-outdoor"> Underground</label>
