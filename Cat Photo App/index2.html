@@ -110,6 +110,17 @@
             background-color: silver;
         }
 
+        /* 3. Use an id attribute to style an element  - CSS puts a higher presidence on id's than 
+        classes. Note that inside your <style> element, you always reference classes by putting 
+        a . in front of their names. You always reference ids by putting a # in front of their names. */
+        #heading {
+            color: green;
+        }
+
+        #cat-photo-form {
+            background-color: green;
+        }
+
     </style>
     
 
@@ -124,6 +135,15 @@
         elements' class atributes the class name does NOT include the period. -->
         <!-- Do not include the period in HTML - only needed for CSS -->
         <h2 class="red-text">Cat Photo App</h2>
+
+        <!-- 3. Use an id Attribute to Style an Element  - CSS puts a higher presidence on id's than 
+        classes, so the text will be green instead of red because id="heading" takes higher presidence
+        over class="red-text". However, an id is not reuseable and should only be applied to one element.
+        An id has a higher specificity(importance) than a class so if both are applied to the same
+        element and have conflicting styles, the style of the id will be applied. Note that inside your
+        <style> element, you always reference classes by putting a . in front of their names. You always
+        reference ids by putting a # in front of their names. -->
+        <!-- <h2 class="red-text" id="heading">Cat Photo App</h2> -->
 
         <main>
             <p> View more <a href="http://freecatphotoapp.com" target="_blank">cat photos</a></p>
