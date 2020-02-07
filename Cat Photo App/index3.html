@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+        <title>Basics of CSS, part 2 - freeCodeCamp</title>
+
+    </head>
+
+    <style>
+
+        /* An element's margin controls the amount of space between an element's border and surrounding
+        elements.  */
+        .injected-text {
+            margin-bottom: -25px;
+            text-align: center;
+        }
+
+        .box {
+            border-style: solid;
+            border-color: black;
+            border-width: 5px;
+            text-align: center;
+        }
+
+        /* All HTML elements are little rectangles. There are three properties that control the space
+        around each element, which is padding, margin, and border. Padding is the space around the text.
+        The margin is the space around the border that surronds the padding.  */
+        .yellow-box {
+            background-color: yellow;
+            padding: 10px;
+        }
+        
+        /* .red-box {
+            background-color: crimson;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .blue-box {
+            background-color: blue;
+            color: #fff;
+            padding: 20px;
+        } */
+
+        /* An element's margin controls the amount of space between an element's border and surrounding
+        elements.  */
+        /* .red-box {
+            background-color: crimson;
+            color: #fff;
+            padding: 20px;
+            margin: 20px;
+        } 
+        
+            .blue-box {
+            background-color: blue;
+            color: #fff;
+            padding: 20px;
+            margin: 10px;
+        } */
+
+        /* If you set an element's margin (space between an element's border and surrounding
+        elements) to a negative value, the element will grow larger. */
+        /* .red-box {
+            background-color: crimson;
+            color: #fff;
+            padding: 20px;
+            margin: -15px;
+        }
+
+        .blue-box {
+            background-color: blue;
+            color: #fff;
+            padding: 20px;
+            margin: -15px;
+        } */
+
+        /* CSS allows you to control the padding (space around text) of all four individual sides of an element with the
+        padding-top, padding-right, padding-bottom, and padding-left properties. */
+            /* .red-box {
+            background-color: crimson;
+            color: #fff;
+            padding-top: 40px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            padding-left: 40px;
+        }
+
+        .blue-box {
+            background-color: blue;
+            color: #fff;
+            padding-top: 40px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            padding-left: 40px;
+        } */
+
+        /* CSS allows you to control the margin (space between an element's border and surrounding
+        elements) of all four individual sides of an element with the margin-top, margin-right, 
+        margin-bottom, and margin-left properties.  */
+        .red-box {
+            background-color: crimson;
+            color: #fff;
+            margin-top: 40px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            margin-left: 40px;
+        }
+
+        .blue-box {
+            background-color: blue;
+            color: #fff;
+            margin-top: 40px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            margin-left: 40px;
+        }
+
+    </style>
+
+    <h5 class="injected-text">margin</h5>
+
+    <div class="box yellow-box">
+        <h5 class="box red-box">padding</h5>
+        <h5 class="box blue-box">padding</h5>
+    </div>
+
+
+</html>
