@@ -29,9 +29,14 @@
         /* All HTML elements are little rectangles. There are three properties that control the space
         around each element, which is padding, margin, and border. Padding is the space around the text.
         The margin is the space around the border that surronds the padding.  */
-        .yellow-box {
+        /* .yellow-box {
             background-color: yellow;
             padding: 10px;
+        } */
+
+        .yellow-box {
+            background-color: yellow;
+            padding: 20px 40px 20px 40px;
         }
         
         /* .red-box {
@@ -101,7 +106,7 @@
         /* CSS allows you to control the margin (space between an element's border and surrounding
         elements) of all four individual sides of an element with the margin-top, margin-right, 
         margin-bottom, and margin-left properties.  */
-        .red-box {
+        /* .red-box {
             background-color: crimson;
             color: #fff;
             margin-top: 40px;
@@ -117,15 +122,76 @@
             margin-right: 20px;
             margin-bottom: 20px;
             margin-left: 40px;
+        } */
+
+        /* Use Clockwise notation to specify the padding (space around text) of an element. 
+        Instead of specifying an element's padding-top, padding-right, padding-bottom, and 
+        padding-left properties indivdually, you can specify them all in one line like this: 
+        padding: 20px 40px 20px 40 px These four values work like a clock: top, right, bottom, left, 
+        and will produce the exact same result as using the side-specific padding instructions. */
+        /* .red-box {
+            background-color: crimson;
+            color: #fff;
+            padding: 20px 40px 20px 40px;
+        }
+
+        .blue-box {
+            background-color: blue;
+            color: #fff;
+            padding: 40px 20px 20px 40px
+        } */
+
+        /* Use Clockwise Notation to Specify the Margin of an Element (space between an element's 
+        border and surrounding elements). Instead of specifying an element's margin-top, margin-right,
+        margin-bottom, and margin-left properties indivdially, you can specify them all in one line like
+        this: margin: 10px 20px 10px 20px  These four values work like a clock: top, right, bottom, left
+        and will produce the exact same results as using the side specific margin instructions. */
+        /* .red-box {
+            background-color: crimson;
+            color: #fff;
+            margin: 20px 40px 20px 40px;
+        }
+
+        .blue-box {
+            background-color: blue;
+            color: #fff;
+            margin: 40px 20px 20px 40px;
+        } */
+
+        /* The last several challenges all set an element's margin or padding with pixels (px). Pixels
+        are a type of length unit, which is what tells the browser how to size or space an item. In
+        addition to px, CSS has a number of different length unit options that you can use. 
+        The two main types of length units are absolute and relative. Absolute units tie to physical
+        units of length. For examples, in and mm refer to inches and millimeters, respectively. Absolute
+        length units approximate the actual measurement on a screen, but there are some differences
+        depending on a screen's resolution.
+        Relative units, such as em or rem, are relative to another length value. For example, em is 
+        based on the size of an element's font. If you use it to set the font-size property itself, it's
+        relative to the parent's font-size.
+        Note: There are several relative unit options that are tied to the size of the viewport. They
+        are covered in the Responsive Web Design Principles section. */
+        .red-box {
+            background-color: crimson;
+            margin: 20px 40px 20px 40px;
+        }
+
+        .green-box {
+            background-color: green;
+            margin: 20px 40px 20px 40px;
         }
 
     </style>
 
     <h5 class="injected-text">margin</h5>
 
-    <div class="box yellow-box">
+    <!-- <div class="box yellow-box">
         <h5 class="box red-box">padding</h5>
         <h5 class="box blue-box">padding</h5>
+    </div> -->
+
+    <div class="box yellow-box">
+        <h5 class="box red-box">padding</h5>
+        <h5 class="box green-box">padding</h5>
     </div>
 
 

@@ -121,6 +121,19 @@
             background-color: green;
         }
 
+        /* Use Attribute Selectors to Style Elements. You have been adding id or class attributes to
+        elements that you wish to specifically style. These are known as ID and class selectors. There
+        are other CSS Selectors you can use to select custom groups of elements to style. For this
+        challenge, you will use the [attr=value] attribute selector to style the checkboxes in CatPhotoApp.
+        This selector matches and styles elements with a specific attribute value. For example, this code 
+        changes the margin of all elements with the attribute type and a corresponding value of radio: */
+        /* [type='radio'] {
+            margin: 10px 0px 15px 0px;
+        } */
+        [type='checkbox'] {
+            margin: 10px 0px 15px 0px;
+        }
+
     </style>
     
 
@@ -146,7 +159,8 @@
         <!-- <h2 class="red-text" id="heading">Cat Photo App</h2> -->
 
         <main>
-            <p> View more <a href="http://freecatphotoapp.com" target="_blank">cat photos</a></p>
+            <p class="red-text"> Click here to view more <a href="#">cat photos</a>.</p>
+            <!-- <p> View more <a href="http://freecatphotoapp.com" target="_blank">cat photos</a></p> -->
             <!-- <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back"></a> -->
             
             <!-- Apply smaller-image class to image to make image the indicated width -->
@@ -182,6 +196,22 @@
                 and modify specific elements with JavaScript. id attributes should be unique. Browsers
                 won't enforce this, nut it is a widely agreed upon best practice, so please don't 
                 give more than one element the same id attribute. -->
+            <!-- <form id="cat-photo-form" action="submit/cat-photo.php" target="_self">
+                <label for="indoor"><input id="indoor" value="indoor" type="radio" name="indoor-outdoor" checked> Indoor</label>
+                <label for="outdoor"><input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor" > Outdoor</label>
+                <label for="underground"><input id="underground" value="underground" type="radio" name="indoor-outdoor"> Underground</label>
+                
+                <br><br>
+
+                <label for="loving"><input id="loving" value="loving" type="checkbox" name="personality" checked> Loving</label>
+                <label for="mean"><input id="mean" type="checkbox" name="personality" value="mean"> Mean</label>
+                <label for="sleepy"><input id="sleepy" type="checkbox" value="sleepy" name="personality"> Sleepy</label>
+
+                <br><br>
+                
+                <input type="text" placeholder="cat photo URL" required><button type="submit">Submit</button>
+            </form> -->
+
             <form id="cat-photo-form" action="submit/cat-photo.php" target="_self">
                 <label for="indoor"><input id="indoor" value="indoor" type="radio" name="indoor-outdoor" checked> Indoor</label>
                 <label for="outdoor"><input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor" > Outdoor</label>
